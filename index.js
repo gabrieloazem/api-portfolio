@@ -7,21 +7,21 @@ app.use(express.json());
 
 app.get('/', (req, res) => {
   res.json({ 
-    sucess: true,
+    success: true,
     data: "Hello World" 
   });
 });
 
 app.get('/endpoint1', (req, res) => {
   res.json({ 
-    sucess: true,
+    success: true,
     data: "Endpoint 1" 
   });
 });
 
 app.get('/endpoint2', (req, res) => {
   res.json({ 
-    sucess: true,
+    success: true,
     data: "Endpoint 2" 
   });
 });
