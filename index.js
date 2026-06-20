@@ -1,6 +1,10 @@
 const express = require('express');
+const cors = require('cors');
 const app = express();
-const port = 3000;
+
+app.use(cors()); 
+
+const port = process.env.PORT || 3000;
 
 // Endpoint único
 app.get('/', (req, res) => {
@@ -8,5 +12,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Servidor rodando em http://localhost:${port}`);
+  console.log(`Servidor rodando na porta ${port}`);
 });
