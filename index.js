@@ -5,13 +5,6 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.get('/', (req, res) => {
-  res.json({ 
-    success: true,
-    data: "Hello World" 
-  });
-});
-
 app.get('/endpoint1', (req, res) => {
   res.json({ 
     success: true,
